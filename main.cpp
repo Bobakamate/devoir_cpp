@@ -104,11 +104,17 @@ public :
 };
 
 int main() {
-    Stack mapile ;
- mapile<<10<<20<<30;
+     Stack mapile ;
+    Stack mapile2 ;
+  mapile<<10<<20<<30;
+  int valeur ;
+    mapile.afficher_pile();
+    cout<<"\n---------------------------\n";
+  mapile>>valeur;
+  mapile = mapile2;
 
     mapile.afficher_pile();
-    cout<<"\n";
+cout<<"le contenue de valeur est : "<<valeur;
 
 
 
