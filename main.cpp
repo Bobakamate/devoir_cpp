@@ -16,7 +16,7 @@ public :
     ElementPile *sommet ;
        int taille_maximale ;
     Stack(int _taille_maximale = 20) :sommet(nullptr),taille_maximale(_taille_maximale){}
-   Stack operator<<  (int n ){
+   Stack & operator<<  (int n ){
         /*ajout d un element en haut de la pile avec l operateur <<*/
        if(!pile_est_pleine())
        {
@@ -28,12 +28,13 @@ public :
        }
        return *this;
    }
-    void operator>> (int &n)
+    Stack & operator>> (int &n)
    {
         n = sommet->valeur;
         ElementPile *temp = sommet->suivant;
         delete sommet;
         sommet = temp;
+       return *this;
 
    }
    int  operator ++(){
