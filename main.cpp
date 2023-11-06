@@ -57,7 +57,7 @@ public :
         try {
             throw "Impossible de faire l affectation entre deux pile ";
         }
-        catch (char * err )
+        catch (const char * err )
         {
             cout <<err<<endl;
         }
