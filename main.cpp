@@ -105,7 +105,7 @@ public :
 
 int main() {
     Stack mapile ;
-  mapile<<10;
+ mapile<<10<<20<<30;
 
     mapile.afficher_pile();
     cout<<"\n";
